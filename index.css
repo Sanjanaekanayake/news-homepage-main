@@ -1,0 +1,235 @@
+:root {
+    --fs-110: 11.2px;
+    --fs-120: 12.5px;
+    --fs-130: 13.2px;
+    --fs-135: 13.5px;
+    --fs-170: 16.5px;
+    --fs-180: 18.5px;
+    --fs-270: 27px;
+    --fs-370: 37px;
+    --fs-450: 45px;
+
+    --fs-nav: 12.5px;
+    --fs-body: 15px;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    --color-primary-orange: hsl(35, 77%, 62%);
+    --color-primary-red: hsl(5, 85%, 63%);
+
+    --color-neutral-off-white: hsl(36, 100%, 99%);
+    --color-neutral-grayish-blue: hsl(233, 8%, 79%);
+    --color-neutral-dark-grayish-blue: hsl(236, 13%, 42%);
+    --color-neutral-very-dark-grayish-blue: hsl(255, 2%, 55%);
+    --color-neutral-very-dark-blue: hsl(240, 100%, 5%);
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: clamp(5rem, 5vw, 10rem);
+    color: var(--color-neutral-dark-grayish-blue);
+    font-size: var(--fs-nav);
+    font-weight: var(--fw-semi-bold);
+}
+
+.main {
+    /* margin-bottom:10px ; */
+    /* margin: 0rem 1rem  0rem  1.5rem; */
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 3rem; */
+}
+.nav-logo {
+    width: 4rem;
+    /* margin-left: 1.5rem; */
+}
+
+/* .primary-navigation{
+
+} */
+
+.even-rows {
+    display: grid;
+    grid-auto-flow: row;
+}
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 3rem;
+}
+.top-content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 2fr 1fr;
+    gap: 2rem;
+}
+.banner {
+    width: 100%;
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Ensures there are no extra spaces below the image */
+}
+
+.card {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 2fr;
+    border: none;
+    gap: 1rem;
+}
+
+.crd-img{
+    width:90px
+}
+
+
+
+h1 {
+    font-size: var(--fs-450);
+    width: 15rem;
+    font-weight: var(--fw-semi-bold);
+    margin-left: 0px;
+}
+h2 {
+    font-size: var(--fs-370);
+    font-weight: var(--fw-semi-bold);
+    color: var(--color-primary-orange);
+    margin: 2rem;
+}
+h3 {
+    font-size: var(--fs-180);
+    font-weight: var(--fw-semi-bold);
+    color: var(--color-neutral-off-white);
+    margin: .7rem 2rem;
+}
+h4 {
+    color: var(--color-primary-red);
+    font-size: var(--fs-270);
+    /* padding: 0.5rem; */
+}
+.block-para {
+    font-size: var(--fs-120);
+    font-weight: var(--fw-regular);
+    color: var(--color-neutral-grayish-blue);
+    margin: 0.5rem 2rem;
+}
+
+.intro {
+    margin: 3rem 0;
+    padding: auto;
+}
+.intro-para {
+    color: var(--color-neutral-very-dark-grayish-blue);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-135);
+}
+
+.black-box {
+    background-color: var(--color-neutral-very-dark-blue);
+    margin-bottom: 5rem;
+}
+
+.line {
+    border-bottom: 2px solid var(--color-neutral-dark-grayish-blue);
+    margin: 2rem 2rem 1rem;
+}
+
+button {
+    /* margin-top: 2rem; */
+    background-color: var(--color-primary-red);
+    padding: .7rem 1.8rem;
+    color: var(--color-neutral-very-dark-blue);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-135);
+    border: none;
+    letter-spacing: .2rem;
+}
+
+.box-title {
+    color: var(--color-neutral-very-dark-blue);
+    font-size: var(--fs-170);
+    /* padding: 0.5rem; */
+    font-weight: var(--fw-semi-bold);
+}
+
+
+@media (min-width: 1440px) {
+    .custom-container {
+        /* padding: .1rem ; */
+        margin: 90px 210px;
+    }
+    
+    .nav-list {
+        font-size: var(--fs-180);
+    }
+    .nav-logo {
+        width: 6rem;
+        
+    }
+    h1 {
+        font-size: 78px;
+        font-weight: 800;
+        width: 28rem;
+        line-height: 4.5rem;
+    }
+    .intro-para {
+        font-size: 20px;
+    }
+
+    button {
+       
+        padding: 1.2rem 4rem 1.2rem 2rem;
+        width:250px;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: var(--fw-bold);
+    }
+    h3{
+        font-size: 25px;
+        font-weight: var(--fw-semi-bold);
+        
+    }
+    h4 {
+       
+        font-size: 50px;
+        font-weight: 700;
+       
+    }
+    .box-title {
+        
+        font-size:27px;
+        font-weight: var(--fw-bold);
+    }
+    .block-para{
+        font-size: 18px;
+    }
+    .crd-img{
+        width:132px
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .custom-container {
+        /* padding: .1rem ; */
+        margin: 60px 140px;
+    }
+
+}
